@@ -1,0 +1,7 @@
+{
+  "name": "berachahboutique",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "live-server --port=5500 --no-browser"
+  }
+}
