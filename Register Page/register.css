@@ -1,0 +1,201 @@
+/* Register Page Styling */
+body {
+  background: linear-gradient(
+    135deg,
+    #89cff0,
+    #ffb6c1
+  ); /* Bluish-pink gradient */
+  margin: 0;
+  font-family: Arial, sans-serif; /* Match the font with home.css */
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the body takes up the full viewport height */
+}
+
+.login-container {
+  background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+  max-width: 400px;
+  margin: auto; /* Center the form vertically and horizontally */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center the input fields vertically */
+  align-items: center; /* Center the input fields horizontally */
+}
+
+.login-container h1 {
+  text-align: center; /* Center the heading */
+  margin-bottom: 20px;
+  color: #333;
+  font-family: Arial, sans-serif; /* Match the font with home.css */
+}
+
+.form-group {
+  margin-bottom: 15px;
+  width: 100%; /* Ensure input fields span the full width of the container */
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-family: Arial, sans-serif; /* Match the font with home.css */
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #ff6f61;
+  box-shadow: 0 0 5px rgba(255, 111, 97, 0.5);
+}
+
+.login-container .btn {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #ff6f61, #ff9671); /* Gradient button */
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-family: Arial, sans-serif; /* Match the font with home.css */
+}
+
+.login-container .btn:hover {
+  background: linear-gradient(
+    135deg,
+    #ff9671,
+    #ff6f61
+  ); /* Reverse gradient on hover */
+  transform: translateY(-3px); /* Slight lift effect */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+
+.login-container p {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 0.9rem;
+  font-family: Arial, sans-serif; /* Match the font with home.css */
+}
+
+.login-container p a {
+  color: #ff6f61;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-container p a:hover {
+  text-decoration: underline;
+}
+
+/* Footer Section */
+footer {
+  background: #333; /* Match the footer background with home.css */
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: auto; /* Push the footer to the bottom of the page */
+}
+
+footer p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .login-container {
+    max-width: 90%;
+    margin: 20px auto;
+    padding: 25px;
+  }
+
+  .login-container h1 {
+    font-size: 1.8rem;
+  }
+
+  .form-group label {
+    font-size: 0.9rem;
+  }
+
+  .form-group input {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+
+  .login-container .btn {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .login-container {
+    max-width: 95%;
+    margin: 15px auto;
+    padding: 20px;
+  }
+
+  .login-container h1 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+
+  .form-group {
+    margin-bottom: 12px;
+  }
+
+  .form-group label {
+    font-size: 0.85rem;
+  }
+
+  .form-group input {
+    padding: 7px;
+    font-size: 0.85rem;
+  }
+
+  .login-container .btn {
+    padding: 8px;
+    font-size: 0.85rem;
+  }
+
+  .login-container p {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .login-container {
+    padding: 15px;
+  }
+
+  .login-container h1 {
+    font-size: 1.3rem;
+  }
+
+  .form-group input {
+    padding: 6px;
+    font-size: 0.8rem;
+  }
+
+  .login-container .btn {
+    padding: 7px;
+    font-size: 0.8rem;
+  }
+}
