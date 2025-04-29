@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Body Styling */
+body {
+  background: linear-gradient(
+    135deg,
+    #89cff0,
+    #ffb6c1
+  ); /* Bluish-pink gradient */
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* Base styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header Section */
+header {
+    background: #f4f4f4;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Updated Navbar Styles */
+.navbar {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 70px;
+}
+
+.navbar .logo img {
+    width: 80px;
+}
+
+.navbar nav {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 0;
+    height: 100%;
+}
+
+.navbar nav ul li {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.navbar nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 5px;
+}
+
+.navbar nav ul li a:hover {
+    color: #ff6f61;
+}
+
+.contact-page {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+}
+
+.contact-page h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-section {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.contact-section h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 1.5em;
+}
+
+/* Social Media Buttons */
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.social-button {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.social-button:hover {
+    transform: translateY(-2px);
+}
+
+.social-button i {
+    font-size: 24px;
+    margin-right: 15px;
+}
+
+.instagram {
+    background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D);
+}
+
+.facebook {
+    background: #1877f2;
+}
+
+/* Contact Buttons */
+.contact-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-button {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #333;
+    background: #f5f5f5;
+    transition: transform 0.3s ease;
+}
+
+.contact-button:hover {
+    transform: translateY(-2px);
+    background: #eeeeee;
+}
+
+.contact-button i {
+    font-size: 24px;
+    margin-right: 15px;
+    width: 30px;
+    text-align: center;
+}
+
+.contact-button span {
+    font-weight: bold;
+}
+
+.contact-button small {
+    margin-left: auto;
+    color: #666;
+}
+
+.whatsapp {
+    color: #25D366;
+}
+
+.phone {
+    color: #ff523b;
+}
+
+.email {
+    color: #ea4335;
+}
+
+/* Contact Form */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.form-group textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    background: #ff523b;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+    background: #ff4125;
+}
+
+@media (max-width: 768px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-page {
+        padding: 40px 20px;
+    }
+}

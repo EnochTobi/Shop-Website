@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Shop - Berachah Boutique</title>
+    <link rel="stylesheet" href="../css/shared.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Firebase -->
+    <script type="module" src="../js/firebaseConfig.js"></script>
+
+    <!-- Shared Navigation -->
+    <script type="module" src="../js/sharedNav.js"></script>
+
+    <!-- Page Specific Scripts -->
+    <script type="module" src="shop.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <!-- Navigation will be inserted here by sharedNav.js -->
+        </div>
+    </header>
+
+    <main class="contact-page">
+        <div class="container">
+            <h1>Contact Us</h1>
+
+            <div class="contact-grid">
+                <!-- Social Media Section -->
+                <div class="contact-section social-media">
+                    <h2>Follow Us</h2>
+                    <div class="social-links">
+                        <a href="https://instagram.com/your-instagram" target="_blank" class="social-button instagram">
+                            <i class="fab fa-instagram"></i>
+                            <span>Follow on Instagram</span>
+                        </a>
+                        <a href="https://facebook.com/your-facebook" target="_blank" class="social-button facebook">
+                            <i class="fab fa-facebook"></i>
+                            <span>Like us on Facebook</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Direct Contact Section -->
+                <div class="contact-section direct-contact">
+                    <h2>Get in Touch</h2>
+                    <div class="contact-buttons">
+                        <a href="tel:+1234567890" class="contact-button phone">
+                            <i class="fas fa-phone"></i>
+                            <span>Call Us</span>
+                            <small>+123 456 7890</small>
+                        </a>
+                        <a href="https://wa.me/1234567890" target="_blank" class="contact-button whatsapp">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>WhatsApp</span>
+                            <small>+123 456 7890</small>
+                        </a>
+                        <a href="mailto:contact@berachahboutique.com" class="contact-button email">
+                            <i class="fas fa-envelope"></i>
+                            <span>Email Us</span>
+                            <small>contact@berachahboutique.com</small>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Contact Form Section -->
+                <div class="contact-section message-form">
+                    <h2>Send us a Message</h2>
+                    <form id="contactForm" onsubmit="return handleSubmit(event)">
+                        <div class="form-group">
+                            <input type="text" id="name" required placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" required placeholder="Your Email">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" required placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Berachah Boutique. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="contact.js"></script>
+    <script src="../js/cartUtils.js"></script>
+</body>
+
+</html>
