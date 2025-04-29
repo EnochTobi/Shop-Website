@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Berachah Boutique | Home</title>
+    <link rel="stylesheet" href="../css/auth.css">
+    <link rel="stylesheet" href="../css/shared.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="../js/authUtils.js" defer></script>
+    <script src="../js/cartUtils.js" defer></script>
+    <script src="home.js" defer></script>
+</head>
+
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="navbar">
+                <div class="nav-toggle" id="navToggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="logo">
+                    <img src="../Home Images/logo.png" alt="Berachah Boutique Logo" width="125">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="../Home Page/home.html">Home</a></li>
+                        <li><a href="../Shop Page/shop.html">Shop</a></li>
+                        <li><a href="../About Page/about.html">About</a></li>
+                        <li><a href="../Contact Page/contact.html">Contact</a></li>
+                        <li><a href="../Cart Page/cart.html"><i class="fas fa-shopping-cart"></i> Cart</a></li>
+                        <li class="login-register">
+                            <a href="../Login Page/login.html">Login/Register</a>
+                        </li>
+                        <li id="nav-profile" class="nav-profile"></li>
+                    </ul>
+                </nav>
+                
+                <!-- Add before closing body tag -->
+                <script src="navbar.js"></script>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-1">
+                    <h1>Welcome to Beracha Boutique</h1>
+                    <p>Your one-stop shop for all things fashion!</p>
+                    <a href="../Shop Page/shop.html" class="btn">Shop Now</a>
+                </div>
+                <div class="col-2">
+                    <!-- Carousel Wrapper -->
+                    <div class="carousel-wrapper">
+                        <div class="carousel-container">
+                            <img src="../Home Images/IMG_0140.png" alt="Fashion Banner 1">
+                            <img src="../Home Images/IMG_0116.png" alt="Fashion Banner 2">
+                            <img src="../Home Images/IMG_0243.png" alt="Fashion Banner 3">
+                            <img src="../Home Images/IMG_0150.png" alt="Fashion Banner 4">
+                            <img src="../Home Images/IMG_0096.png" alt="Fashion Banner 5">
+                            <img src="../Home Images/IMG_0158.png" alt="Fashion Banner 6">
+                            <img src="../Home Images/IMG_0118.png" alt="Fashion Banner 7">
+                            <img src="../Home Images/IMG_0176.png" alt="Fashion Banner 8">
+                            <img src="../Home Images/IMG_0194.png" alt="Fashion Banner 9">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Berachah Boutique. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

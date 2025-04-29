@@ -1,0 +1,446 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body Styling */
+body {
+    background: linear-gradient(135deg, #89cff0, #ffb6c1);
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header Section */
+header {
+    background: #f4f4f4;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Updated Navbar Styles */
+.navbar {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 70px;
+}
+
+.navbar .logo img {
+    width: 80px;
+}
+
+.navbar nav {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 0;
+    height: 100%;
+}
+
+.navbar nav ul li {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.navbar nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 5px;
+}
+
+.navbar nav ul li a:hover {
+    color: #ff6f61;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 0;
+  background: linear-gradient(135deg, #89cff0, #ffb6c1);
+}
+
+.hero .col-1 h1 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.hero .col-1 p {
+  margin: 20px 0;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.hero .btn {
+  padding: 12px 25px;
+  background: linear-gradient(135deg, #ff6f61, #ff9671); /* Gradient button */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 30px; /* Rounded button */
+  font-size: 1rem;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+  transition: all 0.3s ease-in-out;
+  margin-top: 20px; /* Add spacing above the button */
+}
+
+.hero .btn:hover {
+  background: linear-gradient(
+    135deg,
+    #ff9671,
+    #ff6f61
+  ); /* Reverse gradient on hover */
+  transform: translateY(-3px); /* Slight lift effect */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+
+/* Carousel Wrapper */
+.carousel-wrapper {
+  width: 100%;
+  overflow: hidden; /* Hide overflowing images */
+  position: relative;
+  border-radius: 10px; /* Optional: Add rounded corners */
+  max-height: 400px; /* Set a maximum height for the carousel */
+  display: flex;
+  justify-content: center; /* Center the carousel container */
+  align-items: center; /* Vertically center the images */
+  margin-top: 30px; /* Add spacing above the carousel */
+}
+
+/* Carousel Container */
+.carousel-container {
+  display: flex;
+  transition: transform 1s ease-in-out; /* Smooth sliding effect with slower transition */
+  width: calc(
+    100% * 3
+  ); /* Adjust width based on the number of images (3 images in this case) */
+  justify-content: center; /* Center the images horizontally */
+}
+
+/* Carousel Images */
+.carousel-container img {
+  width: auto; /* Allow the width to adjust automatically */
+  height: 300px; /* Set a smaller fixed height for the images */
+  flex-shrink: 0; /* Prevent images from shrinking */
+  object-fit: contain; /* Ensure the full image is visible without cropping */
+  border-radius: 10px; /* Optional: Add rounded corners to images */
+  margin-right: 10px; /* Add spacing between images */
+}
+
+/* Footer Section */
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  font-size: 1rem;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main content area */
+body > *:not(footer) {
+  flex: 1; /* Push the footer to the bottom */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 95%;
+  }
+
+  .hero .col-1 h1 {
+    font-size: 2.2rem;
+  }
+
+  .carousel-container img {
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .navbar nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+ .navbar nav ul li,
+    .user-profile {
+        height: 50px;
+    }
+
+    .profile-dropdown {
+        top: 50px;
+    }
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 0;
+  }
+
+  .hero .col-1 {
+    margin-bottom: 30px;
+  }
+
+  .hero .col-1 h1 {
+    font-size: 2rem;
+  }
+
+  .hero .col-1 p {
+    font-size: 1.1rem;
+  }
+
+  .carousel-wrapper {
+    margin-top: 20px;
+  }
+
+  .carousel-container img {
+    height: 220px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navbar .logo img {
+    width: 70px;
+  }
+
+  .navbar nav ul {
+    gap: 8px;
+  }
+
+  .navbar nav ul li a {
+    font-size: 0.8rem;
+  }
+
+  .hero .col-1 h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero .col-1 p {
+    font-size: 1rem;
+  }
+
+  .hero .btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  .carousel-container img {
+    height: 180px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .navbar nav ul li a {
+    font-size: 0.75rem;
+  }
+
+  .hero .col-1 h1 {
+    font-size: 1.5rem;
+  }
+
+  .carousel-container img {
+    height: 150px;
+  }
+}
+
+/* Profile Dropdown Menu Styles */
+
+.user-profile:hover .profile-dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.profile-dropdown ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-dropdown ul li {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+
+.profile-dropdown ul li a:hover {
+    background-color: #f5f5f5;
+    color: #ff523b;
+}
+
+.profile-dropdown ul li a i {
+    margin-right: 10px;
+    width: 20px;
+    text-align: center;
+}
+
+/* Profile Picture Styles */
+.user-profile {
+    position: relative;
+    cursor: pointer;
+}
+
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ff523b;
+}
+
+.user-profile {
+    position: relative;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.profile-icon {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #ff523b;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.profile-icon i {
+    font-size: 18px;
+}
+
+/* Updated Dropdown Styles */
+.profile-dropdown {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: white;
+    width: 200px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    padding: 8px 0;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+}
+
+.user-profile:hover .profile-dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.profile-dropdown ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.profile-dropdown ul li {
+    height: auto;
+    width: 100%;
+}
+
+.profile-dropdown ul li a {
+    display: flex;
+    align-items: center;
+    padding: 8px 20px;  /* Reduced from 12px */
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    white-space: nowrap;
+}
+
+.profile-dropdown ul li a:hover {
+    background-color: #f5f5f5;
+    color: #ff523b;
+}
+
+.profile-dropdown ul li a i {
+    margin-right: 10px;
+    width: 20px;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 480px) {
+    .navbar nav ul {
+        gap: 8px;
+    }
+
+    .navbar nav ul li a {
+        font-size: 0.8rem;
+    }
+
+    .profile-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .profile-icon i {
+        font-size: 16px;
+    }
+
+    .profile-dropdown {
+        width: 180px;
+    }
+}
