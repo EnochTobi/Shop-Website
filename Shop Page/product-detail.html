@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail - Berachah Boutique</title>
+    <link rel="stylesheet" href="shop.css">
+    <script src="../js/cartUtils.js"></script>
+    <link rel="stylesheet" href="../css/auth.css">
+    <script src="../js/authUtils.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="../Home Images/logo.png" alt="Berachah Boutique Logo" width="125">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="../Home Page/home.html">Home</a></li>
+                        <li><a href="../Shop Page/shop.html">Shop</a></li>
+                        <li><a href="../About Page/about.html">About</a></li>
+                        <li><a href="../Contact Page/contact.html">Contact</a></li>
+                        <li><a href="../Cart Page/cart.html"><i class="fas fa-shopping-cart"></i> Cart</a></li>
+                        <li class="login-register">
+                            <a href="../Login Page/login.html">Login/Register</a>
+                        </li>
+                        <li id="nav-profile" class="nav-profile"></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="product-detail-container">
+            <div class="product-detail">
+                <div class="product-image-large">
+                    <img id="product-image" src="" alt="Product Image">
+                </div>
+                <div class="product-info-detail">
+                    <h1 id="product-title"></h1>
+                    <p class="price" id="product-price"></p>
+                    <p class="product-description" id="product-description"></p>
+                    <p id="stock"></p>
+
+                    <div class="product-options">
+                        <div class="size-selector">
+                            <label for="size">Size:</label>
+                            <select id="size">
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                            </select>
+                        </div>
+                        <div class="quantity-selector">
+                            <label for="quantity">Quantity:</label>
+                            <input type="number" id="quantity" value="1" min="1">
+                        </div>
+                    </div>
+
+                    <div class="product-actions">
+                        <button id="add-to-cart" class="add-to-cart-btn">Add to Cart</button>
+                        <button id="buy-now" class="buy-now-btn">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="product-detail.js"></script>
+</body>
+
+</html>

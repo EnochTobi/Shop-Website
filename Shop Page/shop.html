@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Shop - Berachah Boutique</title>
+    <link rel="stylesheet" href="../css/shared.css">
+    <link rel="stylesheet" href="shop.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Firebase -->
+    <script type="module" src="../js/firebaseConfig.js"></script>
+
+    <!-- Shared Navigation -->
+    <script type="module" src="../js/sharedNav.js"></script>
+
+    <!-- Page Specific Scripts -->
+    <script type="module" src="shop.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <!-- Navigation will be inserted here by sharedNav.js -->
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="search-container">
+                <div class="search-wrapper">
+                    <input type="text" id="searchInput" placeholder="Search products...">
+                    <select id="categoryFilter">
+                        <option value="all">All Categories</option>
+                        <option value="dresses">Dresses</option>
+                        <option value="tops">Tops</option>
+                        <option value="bottoms">Bottoms</option>
+                        <option value="accessories">Accessories</option>
+                    </select>
+                    <button id="searchButton">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-grid" id="product-grid">
+                <!-- Products will be dynamically loaded here -->
+            </div>
+        </div>
+    </main>
+
+    <script src="../js/cartUtils.js"></script>
+</body>
+
+</html>
